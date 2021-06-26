@@ -1,0 +1,73 @@
+
+<!--<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        function acendeLampada(){
+            document.getElementById("luz").src = "imagenes/lamenc4.png";
+            
+        }
+        function apagalampada(){
+            document.getElementById("luz").src= "imagenes/lamparaapagada4.png";
+        }
+        function quebralampada(){
+          document.getElementById("luz").src= "imagenes/roto2.png";
+        }
+
+    </script>
+    <title>Practica</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Acenda a Lâmpada</h1>
+    <img src="imagenes/lamparaapagada4.png" id="luz" onmousemove="acendeLampada()"  onmouseout="apagalampada()" onclick="quebralampada()" alt="">
+    
+</body>
+</html>-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        var quebrada = false
+        function mudaLampada (tipo){
+            if (tipo == 1){
+                arquivo = "imagenes/lamenc4.png";
+            }
+            if (tipo == 2){
+                arquivo = "imagenes/lamparaapagada4.png";
+            }
+            if(tipo == 3){
+                arquivo = "imagenes/roto2.png";
+            }
+            if(! quebrada )
+            {document.getElementById("luz").src = arquivo;
+            if (tipo == 3){
+                quebrada = true;
+            }
+               
+            }
+           
+            
+        }
+        
+        
+        
+
+    </script>
+    <title>Practica</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <h1>Acenda a Lâmpada</h1>
+    <img src="imagenes/lamparaapagada4.png" id="luz" onmousemove="mudaLampada(1)"  onmouseout="mudaLampada(2)" onclick="mudaLampada(3)" alt="">
+    
+</body>
+</html>

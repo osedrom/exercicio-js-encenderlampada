@@ -1,0 +1,17 @@
+body{
+    background-color: rgb(34, 116, 160);
+    
+}
+
+
+
+
+.container,h1{
+    text-align: center;
+align-items: center;font-style: italic;
+color: rgb(220, 240, 240);
+font-size: 55px;
+}
+h3{
+    color: rgb(255, 123, 0);
+}
